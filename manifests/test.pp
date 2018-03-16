@@ -11,3 +11,6 @@ package {'htop':
 ensure => installed,
 }
 
+package {'telnet': 
+ensure => absent,
+}
