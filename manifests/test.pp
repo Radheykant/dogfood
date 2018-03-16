@@ -14,3 +14,12 @@ ensure => installed,
 package {'telnet': 
 ensure => absent,
 }
+
+package {'ruby': 
+ensure => latest,
+}
+
+package {'puppet-lint': 
+ensure => installed,
+provider => gem,
+}
